@@ -1,0 +1,155 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: rgba(59,54,53,1);
+}
+
+
+/* Positionnement et styles des boîtes*/
+
+.page {
+	margin: 80px auto;
+	width: 800px;
+	height: 500px;
+	display: grid;
+	grid-template-rows: 150px 10px 340px;
+	grid-template-columns: 200px 10px 590px;
+}
+
+.social {
+	background-color: none;
+	grid-column:1; grid-row: 1;
+	color: white;
+}
+
+.nav {
+	background-color: #FF9175;
+	grid-column: 3; grid-row: 1;
+}
+
+header {
+	background-color: #57BD9C;
+	grid-column: 1; grid-row: 3;
+	overflow: hidden;
+}
+
+.presentation {
+	background-color: #386355;
+	grid-column: 3; grid-row: 3;
+}
+
+.photo {
+	width: 90%;
+	height: 180px;
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+	border-radius: 40px;
+}
+
+/*style du contenu de la grille*/
+
+.media {
+	width: 90%;
+	margin: 15px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.presentation-wrapper{
+	width: 90%;
+	height: 80%;
+	margin: 0 auto;
+}
+
+.box {
+	float: left;
+	padding: 5px;
+	width: 33.3%;
+	height: 50%;
+	text-align: center;
+	transition: ease-out 1s;
+}
+
+.box:hover {
+	box-shadow: rgba(255,145,117,0.8) 100px 115px 0px 0px inset ;
+	border-radius: 40px;
+}
+
+/* Typographie et contenus des boîtes */
+
+h2, h1 {
+	font-size: 25px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:white;
+}
+
+h3 {
+	margin: 0 auto;
+	font-size: 20px;
+	padding-top: 5px;
+	border-bottom: 3px solid white;
+	color: #75FFD2;
+}
+
+.infos p, .nav p {
+	padding-left: 5px;
+}
+
+.fa {	/*Icons font*/
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    transition: all ease-out 1s;
+}
+
+.fa-facebook:hover {
+    color: white;
+    border: none;
+    box-shadow: #3B5998 100px 10px 0px 0px inset;
+}
+
+.fa-instagram:hover {
+    color: white;
+    border: none;
+    box-shadow: #cd486b 100px 10px 0px 0px inset;
+}
+
+.fa-linkedin:hover {
+    color: white;
+    border: none;
+    box-shadow: #0077B5 100px 10px 0px 0px inset;
+}
+
+.upper {
+	text-transform: uppercase;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+p {
+	color: white;
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+ul li {
+	list-style-type: none;
+}
+
