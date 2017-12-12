@@ -47,10 +47,15 @@ header {
 	width: 90%;
 	height: 180px;
 	overflow: hidden;
-	margin: 10px auto 0 auto;
+	margin: 0 auto 0 auto;
 	border-radius: 40px;
+	position: relative;
 }
 
+.photo img {
+	position: absolute;
+	right: -25px;
+}
 /*style du contenu de la grille*/
 
 .media {
